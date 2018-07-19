@@ -47,24 +47,43 @@ table {
 	box-sizing: border-box;
 }
 
-body{ margin:0px; padding:0px; background:url("assets/freedom.jpg") no-repeat; background-position: top center; background-size:100% 750px;}
+body{ margin:0px; 
+  padding:0px; 
+  background:url("assets/freedom.jpg") no-repeat; background-position:center; 
+  background-size:cover;
+width:100vw;
+  height:100vh;}
 
 .wrapper{ text-align: center;
 padding-top: 4rem;
   width: 90%;
   margin: 0 auto;
   }
-.text{font-size: 2.5rem;
+.text{font-size: 1rem;
   font-family: 
 'Julius Sans One', sans-serif;
-line-height:4rem;
-padding-top: 3rem;
+line-height:3rem;
+padding-top: 2rem;
 justify-content: center;
-text-transform: uppercase;}
+text-transform: uppercase;
+ color:dimgray; 
+}
 
-.name{font-family:'Crimson Text', serif; ;
-  font-size: 1.2rem;
+.name{font-family:'Crimson Text', serif;
+  font-size: 1rem;
 font-style: italic;
-  padding-top:5rem;}
-
-  
+color:dimgray;}
+@media (min-width:768px){
+  body{
+     width:100vw;
+  height:100vh;
+  }
+  .text{
+    font-size:2rem;
+    padding-top:3rem;
+    line-height:3.5rem;
+    color:dimgray;
+  }
+  .name{padding-top:2.5rem;
+  color:dimgray;}
+}
